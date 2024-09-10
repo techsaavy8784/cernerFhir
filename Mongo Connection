@@ -1,0 +1,7 @@
+mongodb+srv://<username>:<password>@cluster1.24b12.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+mongodb+srv://dhf:Sacj0nhati@cluster1.24b12.mongodb.net/admin?replicaSet=atlas-778esk-shard-0&readPreference=primary&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1
+
+
+mongodb://dhf:Sacj0nhati@cluster1-shard-00-01.24b12.mongodb.net:27017,cluster1-shard-00-00.24b12.mongodb.net:27017,cluster1-shard-00-02.24b12.mongodb.net:27017/admin?ssl=true&replicaSet=atlas-778esk-shard-0&readPreference=primary&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1

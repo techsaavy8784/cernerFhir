@@ -1,0 +1,66 @@
+"identifier": [
+    {
+        "use": "usual",
+        "type": {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/v2/0203",
+                    "code": "MR",
+                    "display": "Medical record number",
+                    "userSelected": false
+                }
+            ],
+            "text": "MRN"
+        },
+        "value": "230",
+        "_value": {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+                    "valueString": "00000230"
+                }
+            ]
+        },
+        "period": {
+            "start": "2004-09-08T19:32:31.000Z"
+        }
+    },
+    {
+        "use": "usual",
+        "type": {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/v2/0203",
+                    "code": "AN",
+                    "display": "Account number",
+                    "userSelected": false
+                }
+            ],
+            "text": "Federated Person Principal"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.13.6",
+        "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XY1234",
+        "_value": {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+                    "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XY1234"
+                }
+            ]
+        }
+    }
+],
+"mrn_ids": [
+    {
+        "system": "urn:oid:1.1.1.1.1.1",
+        "name": "MRN"
+    },
+    {
+        "system": "urn:oid:2.2.2.2.2.2",
+        "name": "MR"
+    }
+], 
+
+    https: //fhir-open.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient?identifier=urn:oid:1.1.1.1.1.1|10002091MRNID: urn:oid:1.1.1.1.1.1
+
+    https: //fhir-open.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient?identifier=urn:oid:1.1.1.1.1.1|10002091

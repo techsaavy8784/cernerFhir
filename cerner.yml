@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  ca:
+    image: dhf0820/cerner_ca:220306.3
+    deploy:
+      replicas: 1
+    ports:
+      - "0.0.0.0:9000:9000"
+    environment:
+      #MONGODB: mongodb://dhf:Sacj0nhat1@ids-shard-00-00.fmhdg.mongodb.net:27017,ids-shard-00-01.fmhdg.mongodb.net:27017,ids-shard-00-02.fmhdg.mongodb.net:27017/admin?ssl=true&replicaSet=atlas-k7qs37-shard-0&readPreference=primary&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1
+      MONGODB: mongodb+srv://dhfadmin:Sacj0nhati@cluster1.24b12.mongodb.net/fhir?retryWrites=true&w=majority
+      #MONGODB: mongodb://dhf:Sacj0nhat1@linode.ihids.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256
+      #MONGODB: mongodb://dhf:Sacj0nhat1@docker1.vertisoft.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256
+      DATABASE: fhir
+      MODE: dev
+      FHIR: cerner
+      API: "RESTFUL"
+    #    depends_on:
+    #      - core
+    #    env_file:
+    #      - env_ca_connector
+    volumes:
+      - cerner_ca-data:/data
+    networks:
+      - ids_attachable
+      - vs_attachable
+volumes:
+  cerner_ca-data:
+
+networks:
+  ids_attachable:
+    external: true
+  vs_attachable:
+    external: true

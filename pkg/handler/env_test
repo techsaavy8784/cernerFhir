@@ -1,0 +1,13 @@
+#Hosted Atlas
+#MONGODB=mongodb://dhf:Sacj0nhat1@ids-shard-00-00.fmhdg.mongodb.net:27017,ids-shard-00-01.fmhdg.mongodb.net:27017,ids-shard-00-02.fmhdg.mongodb.net:27017/admin?ssl=true&replicaSet=atlas-k7qs37-shard-0&readPreference=primary&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=idsNew-atlas-k7qs37-shard-0&3t.databases=admin,myFirstDatabase&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true&3t.sslTlsVersion=TLS
+
+#Hosted VertiSoft
+#MONGODB=mongodb://dhf:Sacj0nhat1@docker1.vertisoft.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256
+
+#Hosted Linode
+MONGODB=mongodb://dhf:Sacj0nhat1@linode.ihids.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256&3t.uriVersion=3&3t.connection.name=linode&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+
+DATABASE=fhir
+MODE=dev
+FHIR=cerner
+SERVERURL=http:9000//docker1.vertisoft.com/api/v1/
